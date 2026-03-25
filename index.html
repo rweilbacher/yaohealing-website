@@ -593,7 +593,7 @@
   <header class="hero">
     <p class="hero-name reveal">Inge Manisha Du</p>
     <p class="hero-role reveal reveal-d1">Artist + Coach</p>
-    <a href="/cdn-cgi/l/email-protection#f598949b9c869d94b58c949a9d9094999c9b92db9890" class="hero-cta reveal reveal-d2">Reach Out</a>
+    <!--email_off--><a href="mailto:manisha@yaohealing.me" class="hero-cta reveal reveal-d2">Reach Out</a><!--/email_off-->
     <div class="hero-scroll">scroll</div>
   </header>
 
@@ -773,7 +773,7 @@
           <h2>Connect<br>with me</h2>
           <div class="contact-line">
             <strong>Inge Manisha Du</strong><br>
-            <a href="/cdn-cgi/l/email-protection#375a56595e445f56774e56585f52565b5e5950195a52"><span class="__cf_email__" data-cfemail="ec818d82859f848dac958d8384898d8085828bc28189">[email&#160;protected]</span></a><br>
+            <!--email_off--><a href="mailto:manisha@yaohealing.me">manisha@yaohealing.me</a><!--/email_off--><br>
             <a href="tel:+4915229444734">+49 15229444734</a><br><br>
             Find more about YAO healing <a href="#" style="text-decoration: underline;">here</a>
           </div>
@@ -797,6 +797,16 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => 
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('on');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
