@@ -263,6 +263,19 @@
       max-width: 640px;
       margin: 0 auto;
     }
+    .statement-photo {
+      max-width: 760px;
+      margin: 4rem auto 0;
+    }
+    .statement-photo img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 4px;
+      display: block;
+    }
     .statement .quiet {
       display: block;
       margin-top: 1rem;
@@ -743,6 +756,9 @@
           They can also be confronting.
           <span class="quiet">Often they are both.</span>
         </p>
+        <figure class="statement-photo">
+          <img src="images/smudging.jpg" alt="Smudging" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </figure>
       </div>
     </div>
   </section>
