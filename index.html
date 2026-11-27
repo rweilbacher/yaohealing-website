@@ -545,6 +545,12 @@
     }
     .footer-legal a:hover { color: var(--stone); border-color: var(--stone); }
     .footer-sep { color: var(--stone-lt); }
+    .footer-credit a {
+      color: var(--stone-lt);
+      border-bottom: 1px solid var(--stone-lt);
+      transition: border-color 0.3s, color 0.3s;
+    }
+    .footer-credit a:hover { color: var(--stone); border-color: var(--stone); }
 
     /* ═══════════════════════════════
        RESPONSIVE
@@ -789,6 +795,9 @@
     </div>
     <div class="footer-bar">
       <p>&copy; 2026 Inge Manisha Du</p>
+      <p class="footer-credit">
+        <a href="https://www.daniel-alan.com/breathwork-ausbildung" target="_blank" rel="noopener">Breathwork Ausbildung</a> bei Daniel Alan. Teil des Netzwerks von <a href="https://www.art-of-breath.com" target="_blank" rel="noopener">Art of Breath</a>.
+      </p>
       <nav class="footer-legal">
         <a href="legal.html#impressum">Legal Notice (Impressum)</a>
         <span class="footer-sep">·</span>
